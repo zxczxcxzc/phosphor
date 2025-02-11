@@ -4,14 +4,14 @@
 }
 
 #overlay-noise {
-    background: url("images/noise.webp");
+    background: url("images/mask/noise.webp");
     background-size: 256px;
     display: none;
 }
 #overlay-dots {
     z-index: 1;
     background-color: black;
-    background: url("images/triad.png");
+    background: url("images/mask/triad.png");
     
     background-size: 2px;
     opacity: 0.30;
