@@ -1,0 +1,42 @@
+#overlay-lines {
+    display: none;
+    background: repeating-linear-gradient(rgba(255,255,255,0) 0px, black 2px, rgba(255,255,255,0) 3px);
+}
+
+#overlay-noise {
+    background: url("images/noise.webp");
+    background-size: 256px;
+    display: none;
+}
+#overlay-dots {
+    z-index: 1;
+    background-color: black;
+    background: url("images/triad.png");
+    
+    background-size: 2px;
+    opacity: 0.30;
+    mix-blend-mode: multiply;
+}
+#overlay-black {
+    z-index: 2 !important;
+    background: black;
+    display: none;
+    animation: .01s infinite alternate flicker;
+}
+
+.overlay-fill {
+    position: fixed;
+    pointer-events: none;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+@keyframes flicker {
+    from {
+	    opacity: 0%;
+    }
+    to {
+	    opacity: 5%;
+    }
+}
