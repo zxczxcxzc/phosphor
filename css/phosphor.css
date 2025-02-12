@@ -3,15 +3,14 @@
     background: repeating-linear-gradient(rgba(255,255,255,0) 0px, black 2px, rgba(255,255,255,0) 3px);
 }
 #overlay-noise {
-    background: url("images/mask/noise.webp");
+    background: url("../images/mask/noise.webp");
     background-size: 256px;
     display: none;
 }
 #overlay-dots {
     z-index: 1;
     background-color: black;
-    background: url("images/mask/triad.png");
-    
+    background: url("../images/mask/triad.png");
     background-size: 2px;
     opacity: 0.30;
     mix-blend-mode: multiply;
