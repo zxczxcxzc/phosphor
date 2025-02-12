@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const flickerToggle = $("#flicker-toggle");
     const darkToggle = $("#dark-toggle");
     const blurToggle = $("#blur-toggle")
-    
+    const screenScale = window.devicePixelRatio;
     maskSelect.addEventListener("input", () => {
 	settings.maskBG = `images/mask/${maskSelect.value}`;
     });
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
     scaleSlider.addEventListener("input", () => {
 	const scaleValue = scaleSlider.value;
 	const scaleLabel = $("#scale-val");
-	settings.maskScale = scaleValue / window.devicePixelRatio;
+	settings.maskScale = scaleValue / screenScale;
 	scaleLabel.innerText = scaleValue + "px";
     });
     noiseSlider.addEventListener("input", () => {
