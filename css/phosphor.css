@@ -2,7 +2,6 @@
     display: none;
     background: repeating-linear-gradient(rgba(255,255,255,0) 0px, black 2px, rgba(255,255,255,0) 3px);
 }
-
 #overlay-noise {
     background: url("images/mask/noise.webp");
     background-size: 256px;
@@ -23,7 +22,6 @@
     display: none;
     animation: .01s infinite alternate flicker;
 }
-
 .overlay-fill {
     position: fixed;
     pointer-events: none;
