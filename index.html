@@ -8,83 +8,74 @@
     <header>
       <h1>crt overlay demo</h1>
     </header>
-    <main>
-      <!--phosphor elements start-->
-      <div id="overlay-noise" class="overlay-fill"></div>
-      <div id="overlay-lines" class="overlay-fill"></div>
-      <div id="overlay-dots" class="overlay-fill"></div>
-      <div id="overlay-black" class="overlay-fill"></div>
-      <!--phosphor end-->
-      <div id="controls">
-	<label>screen options</label>
-	<form autocomplete="off">
-	  <div>
-	    <label>mask type</label>
-	    <select id="overlay-masktype">
-	      <option value="triad.png">triad</option>
-	      <option value="slot.png">slot</option>
-	      <option value="grille.png">grille</option>
-	      <option value="triads.png">triad pixel (6px)</option>	
-	      <option value="triad.svg">triad svg</option>
-	      <option value="slot.svg">slot svg</option>
-	      <option value="grille.svg">grille svg</option>	      
-	      <option value="subs.png">subpixel slot (lcd only, 4px)</option>
-	      <option value="subg.png">subpixel grille (lcd only, 2px)</option>
-	    </select>
-	  </div>
-	  <label for="overlay-dotscale">mask scale: <span id="scale-val">4px</span></label> 
-	  <div><input type="range" id="overlay-dotscale" value="4" min="2" max="15" /></div>
-	  
-	  <label for="opacity">mask opacity: <span id="opacity-val">0.30</span></label>
-	  <div><input type="range" id="overlay-opacity" value="30" min="0" max="100"/></div>
-	  
-	  <div>
-	    <input type="checkbox" id="scanline-toggle"/>
-	    <label>enable scanline gaps</label>
-	  </div>
-	  
-	  <div class="indent" id="scanline-modal">
-	    <label for="scanline-opacity">scanline opacity: <span id="scanop-val">0.01</span></label>
-            <div><input type="range" id="scanline-opacity" value="100" min="0" max="100"/></div>
-	  </div>
-	  
-	  <div>
-	    <input type="checkbox" id="flicker-toggle"/>
-	    <label>enable flicker</label>
-	  </div>
-	  <div class="indent" id="flicker-modal">
-	    <label for="flicker-speed">flicker speed: <span id="flicker-val">0.01</span></label>
-            <div><input type="range" id="flicker-speed" value="1" min="1" max="15"/></div>
-	  </div>
-
-	  <div> 
-	    <input type="checkbox" id="noise-toggle"/>
-	    <label>enable noise</label>
-	  </div>
-	  <div class="indent">
-	    <label for="opacity">noise opacity: <span id="noise-val">0</span></label>
-            <div><input type="range" id="overlay-noise-a" value="25" min="0" max="100"/></div>
-	  </div>
-	  
-          <div>
-	    <input type="checkbox" id="blur-toggle"/>
-	    <label for="blur-toggle">enable text blur</label>
-	  </div>
-	  
-	  <div>
-	    <input type="checkbox" checked id="dark-toggle"/>
-	    <label>dark mode</label>
-	  </div>
-	</form>
-      </div>
-      <h2>This is some text</h2>
-      <p>The Learjet 50 series was first announced at the 1977 Paris Air Show with larger cabins than existing Learjets. The series was to have three variants, the Learjet 54, 55 and 56 but only the Learjet 55 was built. The Learjet 55 was a low-wing cantilever monoplane with NASA-developed winglets. The aircraft has a T-tail and is powered by two Garrett TFE731 turbofans mounted each side of the rear fuselage. It has a retractable tricycle landing gear and an enclosed cabin for up to ten passengers and a cockpit for the two crew. Construction of the Learjet 55 began in April 1978 after extensive testing and work on the wing design which came, initially, from the Learjet 25. The Learjet 55 first flew on 19 April 1979. The first production aircraft were produced starting 18 March 1981. In total, 147 Learjet 55 aircraft were delivered. </p>
-      <div id="gallery">
-	<img src="images/fruit.jpg">
-	<img src="images/cat.jpg">
-	<img src="images/spec.png">
-      </div>
-    </main>
+    <!--phosphor elements start-->
+    <div id="overlay-noise" class="overlay-fill"></div>
+    <div id="overlay-lines" class="overlay-fill"></div>
+    <div id="overlay-dots" class="overlay-fill"></div>
+    <div id="overlay-black" class="overlay-fill"></div>
+    <!--phosphor end-->
+    <div id="controls">
+      <label>screen options</label>
+      <form autocomplete="off">
+	<div>
+	  <label>mask type</label>
+	  <select id="overlay-masktype">
+	    <option value="triad.png">triad</option>
+	    <option value="slot.png">slot</option>
+	    <option value="grille.png">grille</option>
+	    <option value="triads.png">triad pixel (6px)</option>	
+	    <option value="triad.svg">triad svg</option>
+	    <option value="slot.svg">slot svg</option>
+	    <option value="grille.svg">grille svg</option>	      
+	    <option value="subs.png">subpixel slot (lcd only, 4px)</option>
+	    <option value="subg.png">subpixel grille (lcd only, 2px)</option>
+	  </select>
+	</div>
+	<label for="overlay-dotscale">mask scale: <span id="scale-val">4px</span></label> 
+	<div><input type="range" id="overlay-dotscale" value="4" min="2" max="15" /></div>
+	<label for="opacity">mask opacity: <span id="opacity-val">0.30</span></label>
+	<div><input type="range" id="overlay-opacity" value="30" min="0" max="100"/></div>
+	<div>
+	  <input type="checkbox" id="scanline-toggle"/>
+	  <label>enable scanline gaps</label>
+	</div>
+	<div class="indent" id="scanline-modal">
+	  <label for="scanline-opacity">scanline opacity: <span id="scanop-val">0.01</span></label>
+          <div><input type="range" id="scanline-opacity" value="100" min="0" max="100"/></div>
+	</div>
+	<div>
+	  <input type="checkbox" id="flicker-toggle"/>
+	  <label>enable flicker</label>
+	</div>
+	<div class="indent" id="flicker-modal">
+	  <label for="flicker-speed">flicker speed: <span id="flicker-val">0.01</span></label>
+          <div><input type="range" id="flicker-speed" value="1" min="1" max="15"/></div>
+	</div>
+	<div> 
+	  <input type="checkbox" id="noise-toggle"/>
+	  <label>enable noise</label>
+	</div>
+	<div class="indent">
+	  <label for="opacity">noise opacity: <span id="noise-val">0</span></label>
+          <div><input type="range" id="overlay-noise-a" value="25" min="0" max="100"/></div>
+	</div>
+	<div>
+	  <input type="checkbox" id="blur-toggle"/>
+	  <label for="blur-toggle">enable text blur</label>
+	</div>
+	<div>
+	  <input type="checkbox" checked id="dark-toggle"/>
+	  <label>dark mode</label>
+	</div>
+      </form>
+    </div>
+    <h2>This is some text</h2>
+    <p>The Learjet 50 series was first announced at the 1977 Paris Air Show with larger cabins than existing Learjets. The series was to have three variants, the Learjet 54, 55 and 56 but only the Learjet 55 was built. The Learjet 55 was a low-wing cantilever monoplane with NASA-developed winglets. The aircraft has a T-tail and is powered by two Garrett TFE731 turbofans mounted each side of the rear fuselage. It has a retractable tricycle landing gear and an enclosed cabin for up to ten passengers and a cockpit for the two crew. Construction of the Learjet 55 began in April 1978 after extensive testing and work on the wing design which came, initially, from the Learjet 25. The Learjet 55 first flew on 19 April 1979. The first production aircraft were produced starting 18 March 1981. In total, 147 Learjet 55 aircraft were delivered. </p>
+    <div id="gallery">
+      <img src="images/fruit.jpg">
+      <img src="images/cat.jpg">
+      <img src="images/spec.png">
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

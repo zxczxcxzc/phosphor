@@ -7,17 +7,11 @@ body.dark {
     color: white;
     background: #101010;
 }
-
 img {
     width: 300px;
 }
-
 img .dark {
     width: 10px;
-}
-
-input[type=checkbox] {
-  
 }
 span label {
     display: inline-block;
@@ -25,15 +19,9 @@ span label {
 .indent {
     margin-left: 2em;
 }
-
 section {
     display: inline-block;
 }
-
-#controls label {
-    
-}
-
 #controls {
     font-family: monospace;
     float: left;
@@ -41,7 +29,6 @@ section {
     border: 1px solid black;
     padding: .5em;
 }
-
 #controls.dark {
     border: 1px solid white;
 }
